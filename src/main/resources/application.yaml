@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: phonebook
+  sql:
+    init:
+      mode: always
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle12cDialect
+        format_sql: true
+      show-sql: true
+
+  # Datasource Configuration
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/freepdb1
+    username: atael
+    password: Welcome1234##
+    driver-class-name: oracle.jdbc.OracleDriver
+    type: oracle.ucp.jdbc.PoolDataSource
+    oracleucp:
+      connection-factory-class-name: oracle.jdbc.pool.OracleDataSource
+      sql-for-validate-connection: select * from dual
+      connection-pool-name: phoneBookConnectionPool
+      initial-pool-size: 15
+      min-pool-size: 10
+      max-pool-size: 30
+      fast-connection-failover-enabled: false
+

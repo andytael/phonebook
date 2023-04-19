@@ -1,0 +1,7 @@
+1681930925584:connect
+1681930986520:deploy --app-namer application --artifact-path target/phonebook-0.0.1-SNAPSHOT.jar --image-version 0.0.1 --service-profile obaas
+1681930993195:deploy --app-name application --artifact-path target/phonebook-0.0.1-SNAPSHOT.jar --image-version 0.0.1 --service-profile obaas
+1681931011821:deploy --app-name application --service-name phonebook --artifact-path target/phonebook-0.0.1-SNAPSHOT.jar --image-version 0.0.1 --service-profile obaas
+1681931374489:bind --app-name application --service-name phonebook
+1681931701416:deploy --app-name application --service-name phonebook --artifact-path target/phonebook-0.0.1-SNAPSHOT.jar --image-version 0.0.1 --service-profile obaas --redeploy true
+1681931759957:bind --app-name application --service-name phonebook
