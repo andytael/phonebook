@@ -1,4 +1,4 @@
-2023-04-19 14:02:01,781 INFO oracle.spring.service.cli.shell.ShellApplication [main] Starting AOT-processed ShellApplication using Java 17.0.5 with PID 35547 (/Users/atael/bin/oractl-v2 started by atael in /Users/atael/IdeaProjects/phonebook)
-2023-04-19 14:02:01,782 DEBUG oracle.spring.service.cli.shell.ShellApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
-2023-04-19 14:02:01,782 INFO oracle.spring.service.cli.shell.ShellApplication [main] The following 1 profile is active: "obaas"
-2023-04-19 14:02:01,837 INFO oracle.spring.service.cli.shell.ShellApplication [main] Started ShellApplication in 0.069 seconds (process running for 0.092)
+2023-04-20 14:08:55,466 INFO oracle.spring.service.cli.shell.ShellApplication [main] Starting AOT-processed ShellApplication using Java 17.0.5 with PID 48066 (/Users/atael/bin/oractl-v2 started by atael in /Users/atael/IdeaProjects/phonebook)
+2023-04-20 14:08:55,466 DEBUG oracle.spring.service.cli.shell.ShellApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-04-20 14:08:55,466 INFO oracle.spring.service.cli.shell.ShellApplication [main] The following 1 profile is active: "obaas"
+2023-04-20 14:08:55,535 INFO oracle.spring.service.cli.shell.ShellApplication [main] Started ShellApplication in 0.094 seconds (process running for 0.136)

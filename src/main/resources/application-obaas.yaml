@@ -4,6 +4,7 @@ spring:
   sql:
     init:
       mode: always
+      continue-on-error: true
 
   jpa:
     hibernate:
@@ -12,7 +13,7 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.Oracle12cDialect
         format_sql: true
-      show-sql: true
+    show-sql: true
 
   # Datasource Configuration
   datasource:
@@ -29,3 +30,23 @@ spring:
       min-pool-size: 10
       max-pool-size: 30
       fast-connection-failover-enabled: false
+
+eureka:
+  instance:
+    hostname: ${spring.application.name}
+    preferIpAddress: true
+  client:
+    service-url:
+      defaultZone: ${eureka.service-url}
+    fetch-registry: true
+    register-with-eureka: true
+    enabled: true
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "health,metrics,env,beans,configprops,scheduledtasks,loggers,mappings,prometheus"

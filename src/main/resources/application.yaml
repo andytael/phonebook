@@ -4,6 +4,7 @@ spring:
   sql:
     init:
       mode: always
+      continue-on-error: true
 
   jpa:
     hibernate:
@@ -12,7 +13,7 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.Oracle12cDialect
         format_sql: true
-      show-sql: true
+    show-sql: true
 
   # Datasource Configuration
   datasource:
@@ -30,3 +31,11 @@ spring:
       max-pool-size: 30
       fast-connection-failover-enabled: false
 
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "health,metrics,env,beans,configprops,scheduledtasks,loggers,mappings,prometheus"
