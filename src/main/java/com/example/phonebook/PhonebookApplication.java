@@ -13,5 +13,4 @@ public class PhonebookApplication {
         SpringApplication.run(PhonebookApplication.class, args);
     }
 
-    // add Eureka and actuator stuff
 }
